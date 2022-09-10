@@ -62,7 +62,18 @@ class PossibleEqualMaxSum {
 Output :
 Possible Equal Maximum Sum: 2
 
-Explanation :
+Explanation :</br>
+Data structure used:
+Three queues q1,q2,q3 to store the elements.
+s1,s2,s3 to store respective sums of q1,q2 and q3 respectively.
+
+The approach to the problem is as follows:
+Step1:We store the sums of q1,q2,q3 in s1,s2,s3
+Step2:we add conditionals to satisfy the max possible equal  sum-condition.if the queue is empty simply return 0.If the sum of all three queues are equal return anyone sum.
+For other conditions,finding the queue with maximum sum and removing its front element
+
+
+
 
 
 
