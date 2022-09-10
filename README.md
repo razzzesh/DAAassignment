@@ -1,42 +1,40 @@
-# DAAassignment
+
 class PossibleEqualMaxSum {
-    
-    public static int MaximumSum(int queue1[], int queue2[], int queue3[], int n1, int n2, int n3)
-    {
-    int sum1 = 0, sum2 = 0, sum3 = 0;
+    public static int MaximumSum(int q1[], int q2[], int q3[], int n1, int n2, int n3)
+    {  int s1 = 0, s2 = 0, s3 = 0;
     
     // finding the initial sum of queue1
     for (int i=0; i < n1; i++)
-        sum1 += queue1[i];
+        s1 += q1[i];
     
     // finding the initial sum of queue2
     for (int i=0; i < n2; i++)
-        sum2 += queue2[i];
+        s2 += q2[i];
     
     // finding the initial sum of queue3
     for (int i=0; i < n3; i++)
-        sum3 += queue3[i];
+        s3 += q3[i];
     
     // logic
-    int front1 =0, front2 = 0, front3 = 0;
+    int f1 =0, f2 = 0, f3 = 0;
     int ans = 0;
     while (true)
     {
         // if any queue is empty
-        if (front1 == n1 || front2 == n2 || front3 == n3)
+        if (f1 == n1 || f2 == n2 || f3 == n3)
             return 0;
     
         // if sum of all three queue are equal
-        if (sum1 == sum2 && sum2 == sum3)
-            return sum1;
+        if (s1 == s2 && s2 == s3)
+            return s1;
         
         // finding the queue with maximum sum and removing its front element
-        if (sum1 >= sum2 && sum1 >= sum3)
-            sum1 -= queue1[front1++];
-        else if (sum2 >= sum1 && sum2 >= sum3)
-            sum2 -= queue2[front2++];
-        else if (sum3 >= sum2 && sum3 >= sum1)
-            sum3 -= queue3[front3++];
+        if (s1 >= s2 && s1 >= s3)
+            s1 -= q1[f1++];
+        else if (s2 >= s1 && s2 >= s3)
+            s2 -= q2[f2++];
+        else if (s3 >= s2 && s3 >= s1)
+            s3 -= q3[f3++];
     }
     }
     
