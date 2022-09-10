@@ -1,4 +1,5 @@
 
+```
 class PossibleEqualMaxSum {
     public static int MaximumSum(int q1[], int q2[], int q3[], int n1, int n2, int n3)
     {  int s1 = 0, s2 = 0, s3 = 0;
@@ -52,3 +53,4 @@ class PossibleEqualMaxSum {
         System.out.println("Possible Equal Maximum Sum: "+MaximumSum(queue1, queue2, queue3, n1, n2, n3));
     }
 }
+```
