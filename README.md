@@ -85,7 +85,7 @@ Stack 2 : 3 6 1
 Stack 3 : 1 2 5
 OUTPUT 3 :
 Possible Equal Maximum Sum : 7
-
+```
 
 
 Explanation :</br>
@@ -100,7 +100,6 @@ For other conditions,finding the queue with maximum sum and removing its front e
 
 
 
-```
 
 
 
