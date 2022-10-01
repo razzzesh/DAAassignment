@@ -3,6 +3,16 @@
 
 Problem Statement : Possible Maximum Sum of Three Stacks: Queue Implementation
 
+
+Implementation:
+
+Here we used  ueue  Data Stucture .
+
+1st value of input will be f of the queue (analogous to Top of Stack)
+then values will be added to the rear of the queue
+Code 1 : Implementation using Arrays
+Code 2 : Implementation using inbuilt Queue 
+
 Code:
 ```
 class PossibleEqualMaxSum {
@@ -59,8 +69,33 @@ class PossibleEqualMaxSum {
     }
 }
 ```
-Output :
+Output of the Code  :
 Possible Equal Maximum Sum: 2
+
+
+TEST CASES
+INPUT 1 :
+Stack 1 : 6 1 0 1
+Stack 2 : 6 1 1 
+Stack 3 : 5 2 8
+OUTPUT 1  :
+Possible Equal Maximum Sum : 8
+
+INPUT 2 :
+Stack 1 : 8 5 3
+Stack 2 : 6 9 4 2 2
+Stack 3 : 3 2 1 2
+OUTPUT 2  :
+Possible Equal Maximum Sum : 8
+
+INPUT 3 :
+Stack 1 : 9 1 4 2
+Stack 2 : 3 6 1
+Stack 3 : 1 2 5
+OUTPUT 3 :
+Possible Equal Maximum Sum : 7
+
+
 
 Explanation :</br>
 Data structure used:
@@ -71,6 +106,9 @@ The approach to the problem is as follows:
 Step1:We store the sums of q1,q2,q3 in s1,s2,s3
 Step2:we add conditionals to satisfy the max possible equal  sum-condition.if the queue is empty simply return 0.If the sum of all three queues are equal return anyone sum.
 For other conditions,finding the queue with maximum sum and removing its front element
+
+
+
 
 
 
