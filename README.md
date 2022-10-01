@@ -2,16 +2,7 @@
 
 
 Problem Statement : Possible Maximum Sum of Three Stacks: Queue Implementation
-
-
-Implementation:
-
-Here we used  ueue  Data Stucture .
-
-1st value of input will be f of the queue (analogous to Top of Stack)
-then values will be added to the rear of the queue
-Code 1 : Implementation using Arrays
-Code 2 : Implementation using inbuilt Queue 
+Finding the Maximum sum of three Stacks using queue data stucture .
 
 Code:
 ```
@@ -68,7 +59,7 @@ class PossibleEqualMaxSum {
         System.out.println("Possible Equal Maximum Sum: "+MaximumSum(queue1, queue2, queue3, n1, n2, n3));
     }
 }
-```
+
 Output of the Code  :
 Possible Equal Maximum Sum: 2
 
@@ -109,7 +100,7 @@ For other conditions,finding the queue with maximum sum and removing its front e
 
 
 
-
+```
 
 
 
