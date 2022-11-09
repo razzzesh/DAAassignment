@@ -7,8 +7,10 @@ Finding the Maximum sum of three Stacks using queue data structure .
 
 Given :
 Three stacks of the positive numbers.
+
 Find :
 Possible equal maximum sum of the stacks.
+
 Constraint :
 Removal is permitted from top of stack.
 
